@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+}
+
+.header {
+  background-color: #24547c;
+  grid-area: encabezado;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.aside {
+  background-color: #d3d3d3;
+  grid-area: menu;
+}
+  .aside-info {
+  display: flex;
+  flex-direction: column;
+}
+  .aside-info h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+  .aside-info p {
+  margin-bottom: 5px;
+}
+.cantidad-item-catalogo{
+  color: gray;
+}
+
+.main {
+  background-color: #d3d3d3;
+  grid-area: principal;
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1.5fr 2.5fr;
+  gap: 20px;
+  /* overflow-y: scroll; */
+}
+
+.cards{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px red solid; */
+  margin: 5px 20px 5px 0px;
+}
+.cards img {
+  max-width: 45%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.boton {
+  color: white;
+  background-color: #24547c;
+  width: 100%;
+  text-align: center;
+}
+.footer {
+  color: white;
+  background-color: #24547c;
+  grid-area: pie;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 10% 85% 5%;
+  grid-template-areas:
+    "encabezado encabezado"
+    "menu principal"
+    "pie pie";
+}
